@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
+title: "Yo por allá no voy": Los estratos y el espacio Bogotano
+description: ¿Cuál es la influencia de la estratificación inmobiliaria en Bogotá en la oferta de bienes y servicios? 
 img: assets/img/3.jpg
 importance: 2
 category: work
@@ -10,6 +10,8 @@ category: work
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
+
+<iframe src="https://storymaps.arcgis.com/stories/589b1e79e9b5454fbd1f0534d548d198" width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
