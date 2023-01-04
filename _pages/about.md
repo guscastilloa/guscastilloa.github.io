@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
@@ -18,4 +18,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-This is me, gus.
+I'm an last year economics and political science student. I'm interested in econometrics, behavioral science, epistemology, complexity and open science. Oftentimes I work on junior research [projects](/projects/) by myself and also with my peers and whoever wants to collaborate.
