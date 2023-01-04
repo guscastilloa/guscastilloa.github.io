@@ -4,4 +4,4 @@ date: 2023-01-03 22:10:00-0400
 inline: true
 ---
 
-Comencé a aprender Java.
+Started Java specialization course.
