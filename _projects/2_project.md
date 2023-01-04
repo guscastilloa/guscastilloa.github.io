@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Yo por allá no voy": Los estratos y el espacio Bogotano
+title: "Yo por allá no voy" Los estratos y el espacio Bogotano
 description: ¿Cuál es la influencia de la estratificación inmobiliaria en Bogotá en la oferta de bienes y servicios? 
 img: assets/img/3.jpg
 importance: 2
