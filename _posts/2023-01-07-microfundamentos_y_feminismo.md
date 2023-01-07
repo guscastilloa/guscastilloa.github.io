@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a post with diagrams
+title: microfundamentos y feminismo
 date: 2023-01-07 17:39:00
 description: an example of a blog post with diagrams
 ---
