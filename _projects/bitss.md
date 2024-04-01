@@ -3,11 +3,13 @@ layout: page
 title: "BITSS course on open science"
 description: "Summer Workshop on reproducible research to be held at Uniandes"
 img: /assets/bitss_site_icon.png
+importance: 1
+category: work
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/BITSS_logo.png" title="BITSS logo" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/BITSS_logo.png" title="BITSS logo" %}
     </div>
 </div>
 <div class="caption">
