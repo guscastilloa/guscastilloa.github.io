@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "RA on Impact Evaluation of Alternative Development program in Colombia"
+title: "Impact Evaluation AD program"
+description: "Research Assistant on impact evaluation of PNIS alternative development program in Colombia"
 img: /assets/img/coca_hands.jpeg
 importance: 2
 category: work

@@ -2,7 +2,7 @@
 layout: page
 title: "BITSS course on open science"
 description: "Summer Workshop on reproducible research to be held at Uniandes"
-img: /assets/bitss_site_icon.png
+img: /assets/img/bitss_site_icon.png
 importance: 1
 category: work
 ---
