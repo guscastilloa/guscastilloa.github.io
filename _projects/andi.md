@@ -14,7 +14,7 @@ The *Unidades de Planificación Zonal* or UPZ are planning units designated by t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/andi/andi_f1.jpg" title="Figure 1" %}
+        {% include figure.html path="assets/img/andi/andi_f1.jpg" class="img-fluid" title="Figure 1" %}
     </div>
 </div>
 <div class="caption">
@@ -25,7 +25,7 @@ At the cadastral sector level the relationship between violent crime rate and 20
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/andi/andi_f2_violento.png" title="Figure 2" %}
+        {% include figure.html path="assets/img/andi/andi_f2_violento.png" class="img-fluid" title="Figure 2" %}
     </div>
 </div>
 <div class="caption">
@@ -37,7 +37,7 @@ At the cadastral sector level the relationship between violent crime rate and 20
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/andi/andi_f3_hurto.png" title="Figure 3" %}
+        {% include figure.html path="assets/img/andi/andi_f3_hurto.png" class="img-fluid" title="Figure 3" %}
     </div>
 </div>
 <div class="caption">
@@ -48,7 +48,7 @@ At the city block level crime points had to be joined to the block polygon close
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/andi/andi_f4.jpg" title="Figure 4" %}
+        {% include figure.html path="assets/img/andi/andi_f4.jpg" class="img-fluid" title="Figure 4" %}
     </div>
 </div>
 <div class="caption">
