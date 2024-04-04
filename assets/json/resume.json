@@ -1,0 +1,39 @@
+{
+  "basics": {
+    "name": "Gustavo Adolfo Castillo Alvarez",
+    "email": "gustavo.castillo.alvarez@gmail.com"
+  },
+  "education": [
+    {
+      "institution": "Universidad de los Andes, Bogotá, Colombia",
+      "area": "Economics",
+      "studyType": "B.A.",
+      "gpa": "4.04/5"
+    },
+    {
+      "institution": "Universidad de los Andes, Bogotá, Colombia",
+      "area": "Political Science",
+      "studyType": "B.A.",
+      "gpa": "4.04/5"
+    },
+    {
+      "institution": "Universidad de los Andes, Bogotá, Colombia",
+      "area": "Philosophy",
+      "studyType": "Minor"
+    },
+    {
+      "institution": "Universidad de los Andes, Bogotá, Colombia",
+      "area": "French",
+      "studyType": "Minor"
+    }
+  ],
+  "work": [],
+  "skills": [
+    {
+      "name": "Software",
+      "level": "Intermediate to Advanced",
+      "keywords": ["Excel", "Word", "PowerPoint", "Adobe Photoshop", "Adobe Illustrator", "Stata", "Python", "R", "LaTeX"]
+    }
+  ]
+}
+
