@@ -1,0 +1,47 @@
+---
+layout: post
+title: "Predicting Poverty"
+author: "Gustavo Castillo"
+date: "`r Sys.Date()`"
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: true
+knit: (function(inputFile, encoding) {
+    rmarkdown::render(inputFile,
+                      encoding = encoding,
+                      output_file = file.path(paste0(
+                        "/Users/upar/Library/CloudStorage/GoogleDrive-gustavo.castillo.alvarez@gmail.com/Mon Drive/00-SCHOOL-G/0-University_1/0-Semestres PEG/2024-10/Complexity Global School/guscastilloa.github.io/_posts/",
+                                                  Sys.Date(),
+                                                  '-',
+                                                  substr(basename(inputFile), 1, nchar(basename(inputFile)) - 4),
+                                                  '.md'
+                                                  )
+                                              )
+                      )
+    })
+---
+
+```{r, echo=FALSE}
+knitr::opts_knit$set(
+  base.dir = "/Users/upar/Library/CloudStorage/GoogleDrive-gustavo.castillo.alvarez@gmail.com/Mon Drive/00-SCHOOL-G/0-University_1/0-Semestres PEG/2024-10/Complexity Global School/guscastilloa.github.io", 
+  base.url = "/")
+knitr::opts_chunk$set(fig.path = "assets/img/posts/2024/predicting_poverty/")
+
+```
+
+# Introduction
+
+```{r}
+data(iris)
+```
+
+
+# Data
+
+```{r}
+plot(iris$Species)
+```
+
+
+## Descriptive Data
