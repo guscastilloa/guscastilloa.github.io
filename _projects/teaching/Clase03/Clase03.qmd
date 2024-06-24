@@ -42,6 +42,7 @@ Corta [encuesta](https://tally.so/r/nPEQ0x) para conocer sus necesidades:
 :::footer
 Clyburne-Sherin, et al (2019, pág. 2) *Computational Reproducibility via Containers in Psychology*
 :::
+
 ## Acotando el problema
 
 - **Reproducción computacional**
@@ -82,7 +83,7 @@ files and written instructions."
 
 ##
 - Las computadoras son la herramienta de tecnología de información de nuestros tiempos
-- 
+
 
 > La tecnología de la información no empezó con el ordenador, ni con el teléfono o el telégrafo. Empezó con el lenguaje escrito.
 >
@@ -222,8 +223,8 @@ Los famosos `README.md` se escriben en Markdown. Veamos un [ejemplo](https://git
 
 :::incremental
  - Creado en 2015 por [Yihui Xie](https://yihui.org/)
- - adfadfa
- - adfjadkfjka
+ - Funcional dentro del IDE de RStudio
+ - Soporta R y python
 :::
 
 ## Funcionamiento de R Markdown
@@ -236,13 +237,12 @@ Tomado de [diapositivas](https://slides.yihui.org/2021-Brazilian-R-Day.html#26) 
 ## Quarto
 - Creado el 2022 por **Posit** 
   - El mismo año la compañía RStudio PBC cambia su nombre a Posit PBC para acoger otros servicios como pyton.
-- Esta presentación fue programada con Quarto, [source]().
+- Esta presentación fue programada con Quarto, [source](https://github.com/guscastilloa/guscastilloa.github.io/blob/master/_projects/teaching/Clase03/Clase03.qmd).
 
 ## Jupyter
 :::incremental
 - Nace en 2014 por [Fernando Pérez]() (U de Antioquia, UCBoulder) y Brian Granger
-- Dato: el nombre hace referencia a los 3 programas que soporta: **Ju**lia, **py**thon y **R**.
-- 
+- Dato: el nombre hace referencia a los 3 programas que soporta: **Ju**lia, **pyt**hon y **R**.
 - [Guía](https://gist.github.com/aaizemberg/de26054c0e2964be96bb468b9ce1c019) para usar R en Jupyter
 :::
 
@@ -317,3 +317,18 @@ pie(table_src, main = 'Herramienta preferida')
 ## ¿Hacia dónde nos estamos moviendo?
 
 - No solo documentos reproducibles, sino *entornos reproducibles*.
+- Makefile
+- Dockerfiles
+- Libro [The Turing Way](https://book.the-turing-way.org/)
+
+## La próxima clase
+- Control de Versión (Git, github, gitlab)
+- Repositorios de Datos (OSF, Zenodo)
+
+## Eso es todo por hoy!
+
+![](img/april_2019_p_2.png)
+
+:::footer
+[Clyburne-Sherin, et al (2019, pág. 2)](https://open.lnu.se/index.php/metapsychology/article/view/892/2088) *Computational Reproducibility via Containers in Psychology*
+:::
