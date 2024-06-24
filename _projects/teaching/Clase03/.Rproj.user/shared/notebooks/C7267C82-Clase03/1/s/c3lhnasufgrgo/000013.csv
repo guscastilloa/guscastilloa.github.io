@@ -1,0 +1,2 @@
+"0","require(kableExtra)"
+"0","kable(table_src, caption=""¿En qué SO está ahora?"")"
