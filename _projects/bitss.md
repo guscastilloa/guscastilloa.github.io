@@ -22,3 +22,8 @@ course "Doing Open Science: Best Practices for Transparent and Reproducible
 Research" as part of the Berkeley Initiative for Transparency in the 
 Social Sciences ([BITSS](https://www.bitss.org/)) 2024 Catalyst Grant for 
 advancing  transparent, reproducible and Ethical research. The intention is providing a spanish-lanuage-based workshop, from which we will construct resources in spanish to share best practices in applied (academic and industry) research. We'll concentrate no code integrity, structure, usage of version management such as git, and finally file storage in repositories like OSF and Zenodo.
+
+## Materiales de Clase
+
+- Clase 3
+    - [Slides](/_projects/teaching/Clase03/Clase03.html)
