@@ -256,7 +256,7 @@ Tomado de [diapositivas](https://slides.yihui.org/2021-Brazilian-R-Day.html#26) 
 
 ```{r, echo=T}
 zenodo.prefix <- "10.5072/zenodo" # Prefijo de Zenodo
-zenodo.id <- "74460" # ID de la última versión
+zenodo.id <- "74458" # ID de la última versión
 zenodo.api <- "https://sandbox.zenodo.org/api/records/" # API completo
 ```
 
@@ -279,8 +279,8 @@ require(dplyr)
 require(gather)
 latest <- fromJSON(file=file.path(dataloc,"metadata.json"))
 file.list <- as.data.frame(latest$files) %>% select(starts_with("self")) %>% gather()
-f <- "https://sandbox.zenodo.org/api/records/74460/files/Antes_de_comenzar.._._dummy_Submissions_2024-06-24.csv/content"
-download.file(f, destfile = file.path(workpath, "encuesta.csv"))
+# f <- "https://sandbox.zenodo.org/api/records/74461/files/Antes_de_comenzar.._._dummy_Submissions_2024-06-24.csv/content"
+download.file(file.list$value, destfile = file.path(workpath, "encuesta.csv"))
 
 df <- import(file.path(workpath, "encuesta.csv"))
 require(janitor)
