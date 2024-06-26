@@ -302,9 +302,6 @@ Tomado de [xkcd #1296](https://xkcd.com/1296/)
 ![](img/baticomputer_meme.jpg)
 
 
-## Conflictos
-- que hacer
-
 ## Recomendaciones
 
 - Escribir/documentar para otros humanos (el "yo" dentro de 1 mes)
