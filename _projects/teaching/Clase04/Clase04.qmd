@@ -301,6 +301,12 @@ Tomado de [xkcd #1296](https://xkcd.com/1296/)
 
 ![](img/baticomputer_meme.jpg)
 
+## Trunk-based development
+
+- No hay ramas de larga duración
+- Commits y merges a menudo
+
+![](img/Trunk-Based-Development.jpeg)
 
 ## Recomendaciones
 
