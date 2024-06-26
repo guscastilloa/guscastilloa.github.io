@@ -1,0 +1,312 @@
+---
+title: "Haciendo Ciencia Abierta"
+subtitle: "Clase 4"
+date: "2024-06-26"
+author: 
+  - Ignacio Sarmiento-Barbieri
+  - Gustavo Castillo Alvarez
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: img/uniandes_logo.png
+---
+
+
+## Requisitos para clase
+
+- Tener instalado **Git**
+- Tener instalado **GitHub Desktop**
+- Tener cuenta en **GitHub**
+
+
+# Retomando clase anterior
+<!-- ##################################################### -->
+<!-- ###############        MOTIVACION       ############# -->
+<!-- ##################################################### -->
+
+## Documentos Reproducibles
+Nos quedó pendiente 
+
+- Demostración de **Renku**
+- Insertar imágeness*
+- Insertar tablas*
+- Insertar referencias*
+
+
+::: {style="font-size: 80%;"}
+*Markdown
+:::
+
+
+## RenkuLab
+
+:::.columns
+
+::: {.column width="60%"}
+- Creado en 2017 por el [Swiss Data Science Center](https://www.datascience.ch/about)
+- Plataforma web para manejar datos, código, flujos de trabajo, *provenance*,
+y entornos computacionales
+- Podemos ejecutar sesiones de JupyterLab o RStudio
+- Repasemos el Proyecto Transversal en RenkuLab y el RMarkdown
+:::
+
+![](img/from_renku.png){.absolute top="90" left="650" width="422" height="401"}
+
+:::
+
+
+# RenkuLab Demo
+
+![](img/baticomputer_meme.jpg)
+
+## 
+
+:::: {.columns}
+::: {style="font-size: 90%;"}
+::: {.column width="50%"}
+> "programs must be written for people to read, and only incidentally for machines to execute"
+>
+
+Abelson, et al (1996, pág. xxii) *Structure and Interpretation of Computer Programs*
+
+:::
+:::
+
+::: {.column width="50%"}
+![](img/SICP_cover.jpg){.absolute top="100" right="30" width="333" height="500"}
+:::
+
+::::
+
+# Software de Control de Versiones
+
+
+## "Control" de versiones
+
+![](img/why_git.png)
+
+- ¿Qué archivo abrirían para trabajar?
+- ¿Cuál es la versión más reciente?
+
+## "Control" de versiones
+
+![](img/why_git2.png)
+
+- ¿Qué archivo abrirían para trabajar?
+- ¿Cuál es la versión más reciente?
+
+## Con git
+
+![](img/why_git4.png){.absolute width="540" height="260" }
+
+## Control de versiones
+
+![](img/why_git3.png){.absolute top="100" right="150"}
+
+![](img/why_git3_zoom.png){.absolute .fragment top="100" left="50"}
+
+:::footer
+Capturas de pantalla de GitHub
+:::
+
+<!-- ##################################################### -->
+<!-- ###############      GIT & GITHUB       ############# -->
+<!-- ##################################################### -->
+
+## Git
+
+:::.columns
+::: {.column width="50%"}
+::: incremental
+- Creado en el 2005 por 
+[Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds), creador de Linux
+- Primer [*commit*](https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290) 
+- *Software* de interfaz de línea de comandos (CLI de *command-line interface*), o de la "terminal"
+
+:::
+:::
+:::
+
+
+![](img/git_logo.png){.absolute top="100" right="30" width="320" height="134"}
+
+## Terminal y Emulador de Terminal
+
+
+![](img/DEC_VT100_terminal_transparent.png){.absolute top="100" right="30" width="460" height="410"}
+
+::: .columns
+::: {.column width="50%"}
+- **Terminal**: dispositivo físico para interactuar con la computadora: enviar y recibir datos
+- **Emuladores**: *software* que simula el funcionamiento de la terminal
+- Terminología: consola, CLI, terminal, shell
+
+:::
+:::
+
+. . .
+```{.sh}
+magick convert imagen_original.png -quality 75 imagen_mas_peque.jpg
+echo "Pasó de 5.8Mb a 400Kb!"
+```
+::: footer
+Terminal DEC VT100, 1978
+:::
+
+## Estados y secciones de un proyecto
+
+Git tiene 3 *estados* principales:
+
+:::incremental
+1. Modificado ( **modified** )
+2. Preparado ( **staged** )
+3. Confirmado ( **committed** )
+:::
+
+. . . 
+
+y  3 *secciones* principales:
+
+:::incremental
+1. El directorio de Git o **Git directory**
+2. El directorio de trabajo o **working directory**
+3. El árae de preparación o **staging area**
+:::
+
+## Lo esencial
+
+![](img/git_gus.png)
+
+## Ejemplo
+
+::: .columns
+::: {.column width="70%"}
+
+::: {style="font-size: 70%;"}
+:::incremental
+1. Modificamos el archivo, ej: añadir efectos fijos a una regresión panel
+2. Lo agregamos al área de preparación con `git add export_modelo1.do`
+3. Confirmamos el cambio con `git commit -m "añadir efectos fijos"`
+:::
+:::
+:::
+
+![](img/git_gus.png){.absolute bottom="10" right="30" width="600" height="363"}
+:::
+
+## Lo que se viene
+
+
+Comandos de CLI:
+```{.sh}
+git config -global user.name "Gustavo A. Castillo"
+git config -global email "ga.castillo@uniandes.edu.co"
+git config --list
+git init
+git status
+git add .
+git commit 
+git checkout
+git switch
+git push
+git pull
+```
+
+. . . 
+
+La mayoría de los comandos son de la forma
+
+::: {style="font-size: 220%;"}
+
+```{.sh}
+git <verbo> <opciones>
+```
+:::
+
+## Git Demo
+
+![](img/baticomputer_meme.jpg)
+
+## Repasemos
+
+Todas las imagenes a continuación fueron tomadas del increíble artículo [*Understanding Git through images*](https://dev.to/nopenoshishi/understanding-git-through-images-4an1) del usuario **kataoka_nopeNoshishi**. 
+
+![](img/git_nopenoshishi1.jpeg)
+
+---
+
+![](img/git_nopenoshishi2.jpeg)
+
+---
+
+![](img/git_nopenoshishi3.jpeg)
+
+---
+
+![](img/git_nopenoshishi4.jpeg)
+
+---
+
+![](img/git_nopenoshishi5.jpeg)
+
+---
+
+![](img/git_nopenoshishi6.jpeg)
+
+---
+
+![](img/git_nopenoshishi7.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+## Revisemos nuestro aprendizaje en 2 minutos
+
+Pueden acceder desde sus celuares o [aquí](https://app.sli.do/event/19BQdufXU9WgipnjY1MNKD).
+Usen un nombre diferente. **No pongan su nombre real.**
+
+![](img/quiz_clase04.png)
+
+## ¿Cómo acordarnos de todo esto?
+
+- Practicar (vale la pena, al igual que acostumbrarnos a Markdown)
+- Ver [*cheat sheet*](https://education.github.com/git-cheat-sheet-education.pdf)
+o ficha de ayuda de GitHub 
+- Algo saldrá mal, lo importante es 
+
+## 
+
+![](img/xkcd_git.png){.absolute width="641" height="956"}
+
+:::footer
+Tomado de [xkcd #1296](https://xkcd.com/1296/)
+:::
+
+## GitHub/GitLab
+
+- Colaborar en repositorios
+- Almacenar repos en internet (**no es para archivo**, Clase05 )
+
+## GitHub Demo
+
+![](img/baticomputer_meme.jpg)
+
+
+## Conflictos
+- que hacer
+
+## Recomendaciones
+
+- Escribir/documentar para otros humanos (el "yo" dentro de 1 mes)
+- Leer los manuales!!
+- Las computadoras son nuestra herramienta
