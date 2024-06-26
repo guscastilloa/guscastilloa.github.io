@@ -27,3 +27,5 @@ advancing  transparent, reproducible and Ethical research. The intention is prov
 
 - Clase 3
     - [Slides](/_projects/teaching/Clase03/Clase03.html)
+- Clase 4
+    - [Slides](/_projects/teaching/Clase04/Clase04.html)
