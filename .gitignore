@@ -11,3 +11,4 @@ Gemfile.lock
 vendor
 
 .Rproj.user
+*.icloud
