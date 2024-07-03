@@ -14,7 +14,10 @@ format:
     logo: img/uniandes_logo.png
 ---
 
+# Agenda de hoy
 
+1. Cerrar módulo de *Version Control System* (Git[Hub/Lab])
+2. Comenzar módulo de *repositorios de datos*
 
 # Retomando clase anterior
 <!-- ##################################################### -->
@@ -26,12 +29,45 @@ format:
 Nos quedó pendiente 
 
 - Repasar [RecetaGalletas](https://github.com/guscastilloa/RecetaGalletas)
-- Ejercicio en clase (solo 4 contribuyeron)
+- Ejercicio en clase ([solo 4](https://github.com/guscastilloa/RecetaGalletas/graphs/contributors) contribuyeron)
 - Un corto quiz en vivo
-- 
+
+## Repasemos
+
+Todas las imagenes a continuación fueron tomadas del increíble artículo [*Understanding Git through images*](https://dev.to/nopenoshishi/understanding-git-through-images-4an1) del usuario **kataoka_nopeNoshishi**. 
+
+![](img/git_nopenoshishi1.jpeg)
+
+---
+
+![](img/git_nopenoshishi2.jpeg)
+
+---
+
+![](img/git_nopenoshishi3.jpeg)
+
+---
+
+![](img/git_nopenoshishi4.jpeg)
+
+---
+
+![](img/git_nopenoshishi5.jpeg)
+
+---
+
+![](img/git_nopenoshishi6.jpeg)
+
+---
+
+![](img/git_nopenoshishi7.jpeg)
+
+
+
 
 ## GitHub/GitLab
 
+- *Quién* hizo *qué* y *cuándo*
 - **Git:** local
 - **Git[Hub/Lab]:** Servicio de almacenamiento en la nube para repositorios de Git
 - Colaborar en repositorios
@@ -57,6 +93,8 @@ Flujo basado en el tronco o *Trunk-based development*
 ¿Cómo escribir el mensaje del *commit*? ¿Qué tener en cuenta?
 
 :::incremental
+- *Quién* hizo *qué* y *cuándo*
+  - ¿pero y el *porqué*?
 - Principio: seremos leídos por otros (el yo-futuro)
 - **Ubicarnos:** Nos ayudan a resumir el trabajo pendiente (WIP de *Work-in-Progress*)
 - **Línea del tiempo:** Posibilitan trazar el progreso de un proyecto
@@ -91,17 +129,80 @@ git commit -m <mensaje aquí>
 ## Recomendaciones
 
 - Escribir/documentar para otros humanos (el "yo" dentro de 1 mes)
+- Usar control de versiones para **código**, **documento**, y **datos** (a continuación)
 - Leer los manuales!!
 - Las computadoras son nuestra herramienta
 
 
+## Usar GitHub como gestor de tareas
 
+Información requerida:
+
+::: {style="font-size: 80%;"}
+**Tarea:** Salsa Robustness Check \
+**Asignada a:** Michael Sinkinson \
+**Asignado por:** Jesse Shapiro \
+<!-- Subscribed to Comments: Matthew Gentzkow \ -->
+**Estatus:** Completada. \
+**Descripción:** \
+Run main specifications adding a control for per capita salsa consumption.
+Add a line to our robustness table reflecting the results.
+:::
+
+## Alternativas gratuitas
+
+- GitLab
+- [Taiga.io](https://taiga.io/)
+- [Quire](https://quire.io/)
+- [OpenProject](https://www.openproject.org/)
+
+---
+
+Sugerencia de flujo de trabajo para tareas:
+
+![](img/jira_workflow.png)
+
+:::
 
 # Repositorios de Datos
 
 ## ¿Qué es preservación de los datos?
 
 ![](img/from_renku.png)
+
+---
+![](img/fair_principles.png)
+
+## Principios FAIR
+
+
+:::columns
+<!-- colstart -->
+
+::: {.column width="50%"}
+
+**F**: *Findable* o datos encontrables
+
+- F1
+- F2
+
+:::
+
+::: {.column width="50%"}
+
+**A**: *Accessible* o datos accesibles
+
+- A1: 
+- A2: 
+
+:::
+
+<!-- colend -->
+:::
+
+
+
+
 
 ## Open Science Framework (OSF)
 
