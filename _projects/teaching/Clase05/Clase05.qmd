@@ -99,6 +99,10 @@ git commit -m <mensaje aquí>
 
 # Repositorios de Datos
 
+## ¿Qué es preservación de los datos?
+
+![](img/from_renku.png)
+
 ## Open Science Framework (OSF)
 
 - Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
