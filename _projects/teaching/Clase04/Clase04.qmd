@@ -282,7 +282,7 @@ Usen un nombre diferente. **No pongan su nombre real.**
 - Practicar (vale la pena, al igual que acostumbrarnos a Markdown)
 - Ver [*cheat sheet*](https://education.github.com/git-cheat-sheet-education.pdf)
 o ficha de ayuda de GitHub 
-- Algo saldrá mal, lo importante es 
+- Algo saldrá mal, pero ayuda tener paciencia y usar las herramientas a nuestra disposición
 
 ## 
 

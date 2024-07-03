@@ -1,0 +1,113 @@
+---
+title: "Haciendo Ciencia Abierta"
+subtitle: "Clase 5"
+date: "2024-06-26"
+author: 
+  - Ignacio Sarmiento-Barbieri
+  - Gustavo Castillo Alvarez
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: img/uniandes_logo.png
+---
+
+
+
+# Retomando clase anterior
+<!-- ##################################################### -->
+<!-- ###############        MOTIVACION       ############# -->
+<!-- ##################################################### -->
+
+## GitHub
+
+Nos quedó pendiente 
+
+- Repasar [RecetaGalletas](https://github.com/guscastilloa/RecetaGalletas)
+- Ejercicio en clase (solo 4 contribuyeron)
+- Un corto quiz en vivo
+- 
+
+## GitHub/GitLab
+
+- **Git:** local
+- **Git[Hub/Lab]:** Servicio de almacenamiento en la nube para repositorios de Git
+- Colaborar en repositorios
+- Almacenar repos en internet (**no es para archivar**, clase de hoy)
+
+## GitHub Demo
+
+![](img/baticomputer_meme.jpg)
+
+## Flujo de trabajo
+
+Flujo basado en el tronco o *Trunk-based development*
+
+- No hay ramas de larga duración
+- Commits y merges a menudo
+
+![](img/Trunk-Based-Development.jpeg)
+
+
+
+## Convenciones para *commits*
+
+¿Cómo escribir el mensaje del *commit*? ¿Qué tener en cuenta?
+
+:::incremental
+- Principio: seremos leídos por otros (el yo-futuro)
+- **Ubicarnos:** Nos ayudan a resumir el trabajo pendiente (WIP de *Work-in-Progress*)
+- **Línea del tiempo:** Posibilitan trazar el progreso de un proyecto
+- **Colaboración:** Facilitarle a nuestros colaboradores cómo ponerse al día
+:::
+
+---
+
+```{.sh}
+git commit -m <mensaje aquí>
+```
+
+
+::: .columns
+<!-- col_start -->
+
+::: {.column width="40%"}
+![Desde GitHub Desktop](img/commit_msg_desktop.png)
+:::
+
+::: {.column width="60%"}
+![Desde la terminal](img/commit_msg_cli.png)
+
+:::
+
+<!-- col_end -->
+:::
+
+
+
+
+## Recomendaciones
+
+- Escribir/documentar para otros humanos (el "yo" dentro de 1 mes)
+- Leer los manuales!!
+- Las computadoras son nuestra herramienta
+
+
+
+
+# Repositorios de Datos
+
+## Open Science Framework (OSF)
+
+- Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
+- Permite que el *proceso*, *contenido*, y *resultados* de la investigación sean accesibles abiertamente
+- Búsqueda de la transparencia
+- Herramienta en la nube, facilita colaboración para alojar datos, manuscritos de borradores, y más
+
+## Zenodo
+
+- Creado en 2013
+- Desarrollado por el proyecto OpenAIRE comisionado por la comisión europea
+- Herramienta 
