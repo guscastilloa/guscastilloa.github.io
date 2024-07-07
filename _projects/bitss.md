@@ -31,3 +31,5 @@ advancing  transparent, reproducible and Ethical research. The intention is prov
     - [Slides](https://guscastilloa.github.io/projects/teaching/Clase04/Clase04.html#/title-slide)
 - Clase 5
     - [Slides](https://guscastilloa.github.io/projects/teaching/Clase05/Clase05.html#/title-slide)
+- Clase 6
+    - [Slides](https://guscastilloa.github.io/projects/teaching/Clase06/Clase06.html#/title-slide)
