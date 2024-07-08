@@ -1,0 +1,200 @@
+---
+title: "Haciendo Ciencia Abierta"
+subtitle: "Clase 6"
+date: "2024-07-08"
+author: 
+  - Ignacio Sarmiento-Barbieri
+  - Gustavo Castillo Alvarez
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: img/uniandes_logo.png
+---
+
+# Agenda de hoy
+
+1. Cerrar módulo de *repositorios de datos*
+2. Fundamentos de gestión de proyectos con GitHub
+3. Recapitulación y cierre de Proyecto Transversal
+
+<!-- ##################################################### -->
+<!-- ###############        RETOMANDO       ############# -->
+<!-- ##################################################### -->
+
+## Ejemplo: Encuesta {.nostretch}
+
+![](img/chat_ejemplo.png){.absolute top="60" left="340"}
+
+# Repositorios de Datos
+
+## ¿Qué es preservación de los datos?
+
+![](img/from_renku.png)
+
+---
+
+![](img/fair_principles.png)
+
+## Principios FAIR
+
+Principios Justos para la gestión de datos de investigación^[[Recurso MinCiencias](https://red-documentacion.minciencias.gov.co/Gestion_Datos_Investigacion/Principios-FAIR)]
+
+
+1. Datos Encontrables (**F**indable)
+2. Datos Accesibles (**A**ccessible) 
+3. Datos Interoperables (**I**nteroperable)
+4. Datos Reutilizables (**Re**-usable)
+
+::: {style="font-size: 80%;"}
+> "the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals."
+> ([Wilkinson et al, 2016](https://doi.org/10.1038/sdata.2016.18))
+:::
+
+---
+
+![](img/fair_box2.png)
+
+:::footer
+([Wilkinson et al, 2016, pág. 3](https://doi.org/10.1038/sdata.2016.18))
+:::
+
+## Principios FAIR
+
+::: {style="font-size: 70%;"}
+
+::::{.columns}
+
+::: {.column width="60%"}
+
+**F**: *Findable* o datos encontrables
+
+- F1: Asignar (Utilizar) identificadores globales, únicos y [persistentes](https://es.wikipedia.org/wiki/Identificador_persistente) a los datos y metadatos.^[Por ejemplo [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) o un [ARK](https://arks.org/) ]
+- F4: Los datos y metadatos se registran o indexan en un recurso de búsqueda.
+
+
+**A**: *Accessible* o datos accesibles
+
+- A1: Los datos y metadatos se pueden recuperar por su identificador utilizando un protocolo de comunicación estandarizado.
+- A2: Los metadatos deben ser accesibles incluso cuando los datos ya no estén disponibles.
+
+:::
+
+::: {.column width="40%"}
+
+**R**: *Reusable* o datos reutilizables
+
+- R1.1: Los datos y metadatos se publican con una licencia de uso de datos clara y accesible.
+- R1.2: Los datos y metadatos incluyen una descripción detallada de la procedencia de los mismos.
+
+:::
+
+:::
+
+:::
+
+
+
+## Open Science Framework (OSF)
+
+- Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
+- Permite que el *proceso*, *contenido*, y *resultados* de la investigación sean accesibles abiertamente
+- Búsqueda de la transparencia
+- Herramienta en la nube, facilita colaboración para alojar datos, manuscritos de borradores, y más
+
+## Zenodo
+
+- Creado en 2013
+- Desarrollado por el proyecto OpenAIRE comisionado por la comisión europea
+- Herramienta 
+
+## Ciclo de vida de los datos
+
+![](img/ciclo1.png)
+
+:::footer
+Tomado y traducido de taller [BITSS RT2](https://www.youtube.com/watch?v=-fwrCsVjR1Q) de Lars Vilhuber
+:::
+
+---
+
+![](img/ciclo3.png)
+
+
+## Ejemplo de guía {.nostretch}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Información relevante:
+
+- **Recolección** terminó el 19 de junio a las 17:05
+- Se **analizó** el 21 de junio
+- Se modificó el formato de la variable fecha el 27 de junio a las 08:06
+
+:::
+
+::: {.column width="50%"}
+![](img/chat_ejemplo.png){width="70%"}
+<!-- {.absolute top="60" left="340"} -->
+
+:::
+
+::::
+
+
+# Gestión de proyectos y tareas
+
+## ¿Para qué?
+
+## Usar GitHub como gestor de tareas
+
+Información requerida:
+
+::: {style="font-size: 80%;"}
+**Tarea:** Salsa Robustness Check \
+**Asignada a:** Michael Sinkinson \
+**Asignado por:** Jesse Shapiro \
+<!-- Subscribed to Comments: Matthew Gentzkow \ -->
+**Estatus:** Completada. \
+**Descripción:** \
+Run main specifications adding a control for per capita salsa consumption.
+Add a line to our robustness table reflecting the results.
+:::
+
+## Alternativas gratuitas
+
+- GitLab
+- [Taiga.io](https://taiga.io/)
+- [Quire](https://quire.io/)
+- [OpenProject](https://www.openproject.org/)
+
+---
+
+Sugerencia de flujo de trabajo para tareas:
+
+![](img/jira_workflow.png)
+
+:::
+
+<!-- ##################################################### -->
+<!-- ###############        END       ############# -->
+<!-- ##################################################### -->
+
+
+# Integrando todas las herramientas
+
+## Rompecabezas de la investigación cuantitativa
+
+![](img/from_renku.png)
+
+## Manos a la obra
+
+![](img/april_2019_p_2.png)
+
+:::footer
+Clyburne-Sherin, et al (2019, pág. 2) *Computational Reproducibility via Containers in Psychology*
+:::
+

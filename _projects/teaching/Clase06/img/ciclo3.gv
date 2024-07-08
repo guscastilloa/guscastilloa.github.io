@@ -1,0 +1,77 @@
+digraph cycle1 {
+  rankdir="LR";
+  # a 'graph' statement
+  graph [overlap = false, fontsize = 10, 
+         layout = dot, colorscheme = svg,
+         size="9,15!" ]
+
+  node [shape = circle,
+        fixedsize = true,
+        style= filled,
+        width = 0.9] // sets as circles
+        
+  edge [penwidth = 5]
+
+  node [fillcolor = firebrick, label="Planear", pos = "0,0!"]
+  plan
+
+  node [fillcolor = orange, label="Recolectar"]
+  collect 
+
+  node [fillcolor = mediumseagreen, label="Procesar"]
+  process
+  
+  node [fillcolor = goldenrod, label="Analizar"]
+  analyze
+  
+  node [fillcolor = mediumpurple, label="Preservar"]
+  preserve
+  preserve2
+  
+  node [fillcolor = lightskyblue, label="Compartir"]
+  share []
+  
+  
+  node [fillcolor = dodgerblue, label="Reutilizar"]
+  reuse
+  
+  
+  node [style=invis]
+  invis1
+  invis2
+  invis3
+  invis4
+
+
+  # several 'edge' statements
+  subgraph cluster_0 {
+    rank = "same";
+    style = filled;
+    color=lightgrey;
+    
+    edge [color = grey]
+    plan -> collect 
+    collect -> invis1 -> process [style=invis]
+    process -> analyze
+  }
+  subgraph cluster_1 {
+    rank = "same";
+    edge [style=invis]
+    invis3 -> invis2 -> preserve -> invis4 -> preserve2
+  }
+  subgraph cluster_2 {
+    style = filled;
+    color=lightgrey;
+    edge [color = grey]
+    
+    share -> reuse 
+    
+    }
+  edge [color = black]
+  collect -> preserve
+  analyze -> preserve2
+  preserve -> process
+  preserve -> share
+  preserve2 -> share
+  
+}
