@@ -16,12 +16,14 @@ format:
 
 # Agenda de hoy
 
-1. Cerrar módulo de *repositorios de datos*
-2. Fundamentos de gestión de proyectos con GitHub
-3. Recapitulación y cierre de Proyecto Transversal
+1.  Cerrar módulo de *repositorios de datos*
+2.  Fundamentos de gestión de proyectos con GitHub
+3.  Recapitulación y cierre de Proyecto Transversal
 
 <!-- ##################################################### -->
+
 <!-- ###############        RETOMANDO       ############# -->
+
 <!-- ##################################################### -->
 
 ## Ejemplo: Encuesta {.nostretch}
@@ -34,167 +36,363 @@ format:
 
 ![](img/from_renku.png)
 
----
+------------------------------------------------------------------------
 
 ![](img/fair_principles.png)
 
 ## Principios FAIR
 
-Principios Justos para la gestión de datos de investigación^[[Recurso MinCiencias](https://red-documentacion.minciencias.gov.co/Gestion_Datos_Investigacion/Principios-FAIR)]
+Principios Justos para la gestión de datos de investigación[^1]
 
+[^1]: [Recurso MinCiencias](https://red-documentacion.minciencias.gov.co/Gestion_Datos_Investigacion/Principios-FAIR)
 
-1. Datos Encontrables (**F**indable)
-2. Datos Accesibles (**A**ccessible) 
-3. Datos Interoperables (**I**nteroperable)
-4. Datos Reutilizables (**Re**-usable)
+1.  Datos Encontrables (**F**indable)
+2.  Datos Accesibles (**A**ccessible)
+3.  Datos Interoperables (**I**nteroperable)
+4.  Datos Reutilizables (**Re**-usable)
 
 ::: {style="font-size: 80%;"}
-> "the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals."
-> ([Wilkinson et al, 2016](https://doi.org/10.1038/sdata.2016.18))
+> "the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals." ([Wilkinson et al, 2016](https://doi.org/10.1038/sdata.2016.18))
 :::
 
----
+------------------------------------------------------------------------
 
 ![](img/fair_box2.png)
 
-:::footer
+::: footer
 ([Wilkinson et al, 2016, pág. 3](https://doi.org/10.1038/sdata.2016.18))
 :::
 
 ## Principios FAIR
 
 ::: {style="font-size: 70%;"}
-
-::::{.columns}
-
+::: columns
 ::: {.column width="60%"}
-
 **F**: *Findable* o datos encontrables
 
-- F1: Asignar (Utilizar) identificadores globales, únicos y [persistentes](https://es.wikipedia.org/wiki/Identificador_persistente) a los datos y metadatos.^[Por ejemplo [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) o un [ARK](https://arks.org/) ]
-- F4: Los datos y metadatos se registran o indexan en un recurso de búsqueda.
-
+-   F1: Asignar (Utilizar) identificadores globales, únicos y [persistentes](https://es.wikipedia.org/wiki/Identificador_persistente) a los datos y metadatos.[^2]
+-   F4: Los datos y metadatos se registran o indexan en un recurso de búsqueda.
 
 **A**: *Accessible* o datos accesibles
 
-- A1: Los datos y metadatos se pueden recuperar por su identificador utilizando un protocolo de comunicación estandarizado.
-- A2: Los metadatos deben ser accesibles incluso cuando los datos ya no estén disponibles.
-
+-   A1: Los datos y metadatos se pueden recuperar por su identificador utilizando un protocolo de comunicación estandarizado.
+-   A2: Los metadatos deben ser accesibles incluso cuando los datos ya no estén disponibles.
 :::
 
 ::: {.column width="40%"}
-
 **R**: *Reusable* o datos reutilizables
 
-- R1.1: Los datos y metadatos se publican con una licencia de uso de datos clara y accesible.
-- R1.2: Los datos y metadatos incluyen una descripción detallada de la procedencia de los mismos.
-
+-   R1.1: Los datos y metadatos se publican con una licencia de uso de datos clara y accesible.
+-   R1.2: Los datos y metadatos incluyen una descripción detallada de la procedencia de los mismos.
+:::
+:::
 :::
 
-:::
-
-:::
-
-
+[^2]: Por ejemplo [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) o un [ARK](https://arks.org/)
 
 ## Open Science Framework (OSF)
 
-- Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
-- Permite que el *proceso*, *contenido*, y *resultados* de la investigación sean accesibles abiertamente
-- Búsqueda de la transparencia
-- Herramienta en la nube, facilita colaboración para alojar datos, manuscritos de borradores, y más
+-   Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
+-   Permite que el *proceso*, *contenido*, y *resultados* de la investigación sean accesibles abiertamente
+-   Búsqueda de la transparencia
+-   Herramienta en la nube, facilita colaboración para alojar datos, manuscritos de borradores, y más
 
 ## Zenodo
 
 - Creado en 2013
 - Desarrollado por el proyecto OpenAIRE comisionado por la comisión europea
-- Herramienta 
+- Herramienta para **archivar** datos, *Archivo General de la Nación*
+- Una vez subidos, no se pueden borrar
+
+## Ejemplo principio A1
+
+- Para automatizar la **adquisición de información** debemos descargar los datos directamente de Zenodo, no desde nuestro computador.
+
+```{r, echo=T}
+zenodo.prefix <- "10.5072/zenodo" # Prefijo de Zenodo
+zenodo.id <- "74458" # ID de la última versión
+zenodo.api <- "https://sandbox.zenodo.org/api/records/" # API completo
+```
+
+
+---
+
+Procesamos información de la encuesta, código a continuación (Clase 05)
+
+```{r, echo=T}
+require(rjson)
+basepath <- here::here()
+dataloc <- file.path(basepath,"resources_for_live_lecture")
+workpath <- tempdir()
+download.file(paste0(zenodo.api,zenodo.id),destfile=file.path(dataloc,"metadata.json"))
+```
+
+---
+
+```{r, echo=T, results='hide'}
+require(rio)
+require(tidyr)
+require(dplyr)
+require(gather)
+latest <- fromJSON(file=file.path(dataloc,"metadata.json"))
+file.list <- as.data.frame(latest$files) %>% select(starts_with("self")) %>% gather()
+download.file(file.list$value, destfile = file.path(workpath, "encuesta.csv"))
+df <- import(file.path(workpath, "encuesta.csv"))
+require(janitor)
+df <- df %>% clean_names()
+```
+
+## Resultados SO
+
+- Tuvimos `r nrow(df)` respuestas.
+
+```{r, echo=T}
+table_src <- table(df$en_que_sistema_operativo_se_encuentra_en_este_momento)
+require(kableExtra)
+kable(table_src, caption="¿En qué SO está ahora?")
+```
+
+## Resultados: Herramientas
+```{r}
+table_src <- table(df$con_que_herramienta_trabajas_la_mayoria_del_tiempo_para_hacer_investigacion_cuantitativa_y_o_analisis_de_datos)
+pie(table_src, main = 'Herramienta preferida')
+```
+
 
 ## Ciclo de vida de los datos
 
 ![](img/ciclo1.png)
 
-:::footer
+::: footer
 Tomado y traducido de taller [BITSS RT2](https://www.youtube.com/watch?v=-fwrCsVjR1Q) de Lars Vilhuber
 :::
 
 ---
 
+- Preservar en el camino, permite mayor transparencia
+
 ![](img/ciclo3.png)
 
 
-## Ejemplo de guía {.nostretch}
+## ¿Preservar datos?
 
-:::: {.columns}
+::::{.columns}
 
-::: {.column width="50%"}
-Información relevante:
-
-- **Recolección** terminó el 19 de junio a las 17:05
-- Se **analizó** el 21 de junio
-- Se modificó el formato de la variable fecha el 27 de junio a las 08:06
+::: {.column width="60%"}
+- Archivar en un lugar confiable
+- Tener un identificador persistente (principio F1)
+- Metadatos accesibles (principio A2)
+- Metadatos y datos indexables (principio F4)
 
 :::
 
-::: {.column width="50%"}
-![](img/chat_ejemplo.png){width="70%"}
-<!-- {.absolute top="60" left="340"} -->
-
+::: {.column width="40%"}
+![](img/meme_zenodo.jpg)
 :::
 
 ::::
 
 
+## Bonus: Documentación para *Machine Learning*
+
+![](img/datasheets.png)
+
+:::footer
+Gebru, T., et a  l (2021). Datasheets for datasets. *Communications of the ACM*, 64(12), 86–92. doi: [10.1145/3458723](https://doi.org/10.1145/3458723)
+:::
+
+## Ejemplo de guía {.nostretch}
+
+::: columns
+::: {.column width="50%"}
+Información relevante:
+
+-   **Recolección** terminó el 19 de junio a las 17:05
+-   Se **modificó** el 21 de junio
+-   Se **analizó** el 21 de junio
+-   Se **modificó** el formato de la variable fecha el 27 de junio a las 08:06
+
+:::
+
+::: {.column width="50%"}
+![](img/chat_ejemplo.png){width="70%"} <!-- {.absolute top="60" left="340"} -->
+:::
+:::
+
 # Gestión de proyectos y tareas
 
 ## ¿Para qué?
 
+
+- ¿Quién **hace/hará** qué y cuándo?
+- Organización y transparencia van de la mano
+- Si para una sola persona es difícil ser ordenada, ¿para muchas?
+
+::: {style="font-size: 70%;"}
+
+> "Ni una sola pieza de software comercial que tengas en tu PC, tu teléfono, tu tableta, tu coche o cualquier otro dispositivo informático moderno se escribió con el método de "fecha e inicial"." 
+> [Gentzkow, Shapiro (2014, pág. 12, trad. propia)](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf)
+
+> "Ni una sola pieza de software comercial que tengas en tu PC, tu teléfono, tu tableta, tu coche o cualquier otro dispositivo informático moderno se [coordinó mediante el correo] ." 
+> [Gentzkow, Shapiro (2014, pág. 12, trad. propia)](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf)
+
+:::
+
 ## Usar GitHub como gestor de tareas
 
-Información requerida:
+Información básica requerida:
 
 ::: {style="font-size: 80%;"}
-**Tarea:** Salsa Robustness Check \
-**Asignada a:** Michael Sinkinson \
-**Asignado por:** Jesse Shapiro \
-<!-- Subscribed to Comments: Matthew Gentzkow \ -->
-**Estatus:** Completada. \
-**Descripción:** \
-Run main specifications adding a control for per capita salsa consumption.
-Add a line to our robustness table reflecting the results.
+**Tarea:** Salsa Robustness Check\
+**Asignada a:** Michael Sinkinson\
+**Asignado por:** Jesse Shapiro\
+<!-- Subscribed to Comments: Matthew Gentzkow \ --> **Estatus:** Completada.\
+**Descripción:**\
+Run main specifications adding a control for per capita salsa consumption. Add a line to our robustness table reflecting the results.
 :::
 
 ## Alternativas gratuitas
 
-- GitLab
-- [Taiga.io](https://taiga.io/)
-- [Quire](https://quire.io/)
-- [OpenProject](https://www.openproject.org/)
+-   GitLab
+-   [JIRA](https://www.atlassian.com/es/software/jira)[^3]
+-   [Taiga.io](https://taiga.io/)
+-   [Quire](https://quire.io/)
+-   [OpenProject](https://www.openproject.org/)
 
----
+[^3]: Gratis hasta 10 personas
+
+------------------------------------------------------------------------
 
 Sugerencia de flujo de trabajo para tareas:
 
 ![](img/jira_workflow.png)
 
-:::
+
+## Demo con GitHub
+
+Veamos como usar los **Issues** y **GitHub Projects**
+
+![](img/baticomputer_meme.jpg)
 
 <!-- ##################################################### -->
+
 <!-- ###############        END       ############# -->
-<!-- ##################################################### -->
 
+<!-- ##################################################### -->
 
 # Integrando todas las herramientas
 
 ## Rompecabezas de la investigación cuantitativa
 
+::: columns
+::: {.column width="50%"}
 ![](img/from_renku.png)
+:::
+
+::: {.column width="50%"}
+![](img/from_renku_spanish.png)
+:::
+:::
+
+## Rompecabezas de la investigación cuantitativa
+
+::: columns
+::: {.column width="50%"}
+-   Flujo de Trabajo ✅
+-   Datos ✅
+-   Código ✅
+-   Entorno 🏁
+    -   Contenedores
+    -   Máquina Virtual
+    -   Sistema Operativo (NixOS)
+:::
+
+::: {.column width="50%"}
+![](img/from_renku_shade_spa.png)
+:::
+:::
+
+## Nuestra caja de herramientas
+
+![](img/hinsen_mod.png)
+
+## Proyecto Transversal: Flujo de Trabajo
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+Documento Reproducible en [R Markdown](https://github.com/guscastilloa/mirza_2021_replication/blob/main/03_document/Documento_rmarkdown.Rmd) y en [Jupyter](https://github.com/guscastilloa/mirza_2021_replication/blob/main/03_document/Documento_jupyter.ipynb)
+![](img/mirza_workflow.png){width="99%"}
+
+:::
+
+:::{.column width="50%"}
+
+![](img/renku_1workflow.png)
+
+:::
+::::
+
+## Proyecto Transversal: Datos
+
+::::{.columns}
+
+
+
+:::{.column width="50%"}
+[Archivados en Zenodo](https://sandbox.zenodo.org/records/79425)^[En el Sandbox! En sandbox es para pruebas.]
+![](img/mirza_data.png){width="99%"}
+
+:::
+
+:::{.column width="50%"}
+
+![](img/renku_2data.png)
+
+:::
+::::
+
+## Proyecto Transversal: Código
+
+::::{.columns}
+
+:::{.column width="50%"}
+[Repositorio en GitHub](https://github.com/guscastilloa/mirza_2021_replication)
+![](img/mirza_code.png){width="80%"}
+
+:::
+
+:::{.column width="50%"}
+
+![](img/renku_3code.png)
+
+:::
+::::
+
+
+## Proyecto Transversal: Entorno
+::::{.columns}
+
+:::{.column width="50%"}
+
+- [Proyecto en RenkuLab](https://renkulab.io/projects/gustavo.castillo.alvarez/mirza-2021-replication)
+- Especificar dependencias e información de sistema
+
+
+:::
+
+:::{.column width="50%"}
+
+![](img/renku_4envir.png)
+
+:::
+::::
 
 ## Manos a la obra
 
 ![](img/april_2019_p_2.png)
 
-:::footer
+::: footer
 Clyburne-Sherin, et al (2019, pág. 2) *Computational Reproducibility via Containers in Psychology*
 :::
-

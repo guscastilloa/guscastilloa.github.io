@@ -31,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="Clase06_files/libs/revealjs/dist/theme/quarto.css">
   <link href="Clase06_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -422,7 +487,7 @@ Gustavo Castillo Alvarez
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>Por ejemplo <a href="https://www.doi.org/the-identifier/what-is-a-doi/">DOI</a> o un <a href="https://arks.org/">ARK</a> </p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Por ejemplo <a href="https://www.doi.org/the-identifier/what-is-a-doi/">DOI</a> o un <a href="https://arks.org/">ARK</a></p></li></ol></aside></section>
 <section id="open-science-framework-osf" class="slide level2">
 <h2>Open Science Framework (OSF)</h2>
 <ul>
@@ -437,9 +502,83 @@ Gustavo Castillo Alvarez
 <ul>
 <li>Creado en 2013</li>
 <li>Desarrollado por el proyecto OpenAIRE comisionado por la comisión europea</li>
-<li>Herramienta</li>
+<li>Herramienta para <strong>archivar</strong> datos, <em>Archivo General de la Nación</em></li>
+<li>Una vez subidos, no se pueden borrar</li>
 </ul>
 </section>
+<section id="ejemplo-principio-a1" class="slide level2">
+<h2>Ejemplo principio A1</h2>
+<ul>
+<li>Para automatizar la <strong>adquisición de información</strong> debemos descargar los datos directamente de Zenodo, no desde nuestro computador.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>zenodo.prefix <span class="ot">&lt;-</span> <span class="st">"10.5072/zenodo"</span> <span class="co"># Prefijo de Zenodo</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>zenodo.id <span class="ot">&lt;-</span> <span class="st">"74458"</span> <span class="co"># ID de la última versión</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>zenodo.api <span class="ot">&lt;-</span> <span class="st">"https://sandbox.zenodo.org/api/records/"</span> <span class="co"># API completo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Procesamos información de la encuesta, código a continuación (Clase 05)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">require</span>(rjson)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>basepath <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>()</span>
+<span id="cb2-3"><a href="#cb2-3"></a>dataloc <span class="ot">&lt;-</span> <span class="fu">file.path</span>(basepath,<span class="st">"resources_for_live_lecture"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>workpath <span class="ot">&lt;-</span> <span class="fu">tempdir</span>()</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">download.file</span>(<span class="fu">paste0</span>(zenodo.api,zenodo.id),<span class="at">destfile=</span><span class="fu">file.path</span>(dataloc,<span class="st">"metadata.json"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">require</span>(rio)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">require</span>(tidyr)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">require</span>(dplyr)</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">require</span>(gather)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>latest <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="at">file=</span><span class="fu">file.path</span>(dataloc,<span class="st">"metadata.json"</span>))</span>
+<span id="cb3-6"><a href="#cb3-6"></a>file.list <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(latest<span class="sc">$</span>files) <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"self"</span>)) <span class="sc">%&gt;%</span> <span class="fu">gather</span>()</span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">download.file</span>(file.list<span class="sc">$</span>value, <span class="at">destfile =</span> <span class="fu">file.path</span>(workpath, <span class="st">"encuesta.csv"</span>))</span>
+<span id="cb3-8"><a href="#cb3-8"></a>df <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">file.path</span>(workpath, <span class="st">"encuesta.csv"</span>))</span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="fu">require</span>(janitor)</span>
+<span id="cb3-10"><a href="#cb3-10"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="resultados-so" class="slide level2">
+<h2>Resultados SO</h2>
+<ul>
+<li>Tuvimos 15 respuestas.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>table_src <span class="ot">&lt;-</span> <span class="fu">table</span>(df<span class="sc">$</span>en_que_sistema_operativo_se_encuentra_en_este_momento)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">require</span>(kableExtra)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">kable</span>(table_src, <span class="at">caption=</span><span class="st">"¿En qué SO está ahora?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<caption>¿En qué SO está ahora?</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Var1</th>
+<th style="text-align: right;">Freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">macOS</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Windows</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="resultados-herramientas" class="slide level2">
+<h2>Resultados: Herramientas</h2>
+
+<img data-src="Clase06_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
 <section id="ciclo-de-vida-de-los-datos" class="slide level2">
 <h2>Ciclo de vida de los datos</h2>
 
@@ -449,8 +588,33 @@ Gustavo Castillo Alvarez
 </section>
 <section class="slide level2">
 
+<ul>
+<li>Preservar en el camino, permite mayor transparencia</li>
+</ul>
 
 <img data-src="img/ciclo3.png" class="r-stretch"></section>
+<section id="preservar-datos" class="slide level2">
+<h2>¿Preservar datos?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Archivar en un lugar confiable</li>
+<li>Tener un identificador persistente (principio F1)</li>
+<li>Metadatos accesibles (principio A2)</li>
+<li>Metadatos y datos indexables (principio F4)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/meme_zenodo.jpg"></p>
+</div>
+</div>
+</section>
+<section id="bonus-documentación-para-machine-learning" class="slide level2">
+<h2>Bonus: Documentación para <em>Machine Learning</em></h2>
+
+<img data-src="img/datasheets.png" class="r-stretch"><div class="footer">
+<p>Gebru, T., et a l (2021). Datasheets for datasets. <em>Communications of the ACM</em>, 64(12), 86–92. doi: <a href="https://doi.org/10.1145/3458723">10.1145/3458723</a></p>
+</div>
+</section>
 <section id="ejemplo-de-guía" class="slide level2 nostretch">
 <h2>Ejemplo de guía</h2>
 <div class="columns">
@@ -458,8 +622,9 @@ Gustavo Castillo Alvarez
 <p>Información relevante:</p>
 <ul>
 <li><strong>Recolección</strong> terminó el 19 de junio a las 17:05</li>
+<li>Se <strong>modificó</strong> el 21 de junio</li>
 <li>Se <strong>analizó</strong> el 21 de junio</li>
-<li>Se modificó el formato de la variable fecha el 27 de junio a las 08:06</li>
+<li>Se <strong>modificó</strong> el formato de la variable fecha el 27 de junio a las 08:06</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/chat_ejemplo.png" style="width:70.0%"> <!-- {.absolute top="60" left="340"} --></p>
@@ -473,10 +638,23 @@ Gustavo Castillo Alvarez
 </section>
 <section id="para-qué" class="slide level2">
 <h2>¿Para qué?</h2>
+<ul>
+<li>¿Quién <strong>hace/hará</strong> qué y cuándo?</li>
+<li>Organización y transparencia van de la mano</li>
+<li>Si para una sola persona es difícil ser ordenada, ¿para muchas?</li>
+</ul>
+<div style="font-size: 70%;">
+<blockquote>
+<p>“Ni una sola pieza de software comercial que tengas en tu PC, tu teléfono, tu tableta, tu coche o cualquier otro dispositivo informático moderno se escribió con el método de”fecha e inicial”.” <a href="https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf">Gentzkow, Shapiro (2014, pág. 12, trad. propia)</a></p>
+</blockquote>
+<blockquote>
+<p>“Ni una sola pieza de software comercial que tengas en tu PC, tu teléfono, tu tableta, tu coche o cualquier otro dispositivo informático moderno se [coordinó mediante el correo] .” <a href="https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf">Gentzkow, Shapiro (2014, pág. 12, trad. propia)</a></p>
+</blockquote>
+</div>
 </section>
 <section id="usar-github-como-gestor-de-tareas" class="slide level2">
 <h2>Usar GitHub como gestor de tareas</h2>
-<p>Información requerida:</p>
+<p>Información básica requerida:</p>
 <div style="font-size: 80%;">
 <p><strong>Tarea:</strong> Salsa Robustness Check<br>
 <strong>Asignada a:</strong> Michael Sinkinson<br>
@@ -490,20 +668,25 @@ Run main specifications adding a control for per capita salsa consumption. Add a
 <h2>Alternativas gratuitas</h2>
 <ul>
 <li>GitLab</li>
+<li><a href="https://www.atlassian.com/es/software/jira">JIRA</a><sup>1</sup></li>
 <li><a href="https://taiga.io/">Taiga.io</a></li>
 <li><a href="https://quire.io/">Quire</a></li>
 <li><a href="https://www.openproject.org/">OpenProject</a></li>
 </ul>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Gratis hasta 10 personas</p></li></ol></aside></section>
 <section class="slide level2">
 
 <p>Sugerencia de flujo de trabajo para tareas:</p>
 
-<img data-src="img/jira_workflow.png" class="r-stretch"><p>:::</p>
+<img data-src="img/jira_workflow.png" class="r-stretch"></section>
+<section id="demo-con-github" class="slide level2">
+<h2>Demo con GitHub</h2>
+<p>Veamos como usar los <strong>Issues</strong> y <strong>GitHub Projects</strong></p>
+
 <!-- ##################################################### -->
 <!-- ###############        END       ############# -->
 <!-- ##################################################### -->
-</section></section>
+<img data-src="img/baticomputer_meme.jpg" class="r-stretch"></section></section>
 <section>
 <section id="integrando-todas-las-herramientas" class="title-slide slide level1 center">
 <h1>Integrando todas las herramientas</h1>
@@ -511,8 +694,81 @@ Run main specifications adding a control for per capita salsa consumption. Add a
 </section>
 <section id="rompecabezas-de-la-investigación-cuantitativa" class="slide level2">
 <h2>Rompecabezas de la investigación cuantitativa</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/from_renku.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/from_renku_spanish.png"></p>
+</div>
+</div>
+</section>
+<section id="rompecabezas-de-la-investigación-cuantitativa-1" class="slide level2">
+<h2>Rompecabezas de la investigación cuantitativa</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Flujo de Trabajo ✅</li>
+<li>Datos ✅</li>
+<li>Código ✅</li>
+<li>Entorno 🏁
+<ul>
+<li>Contenedores</li>
+<li>Máquina Virtual</li>
+<li>Sistema Operativo (NixOS)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/from_renku_shade_spa.png"></p>
+</div>
+</div>
+</section>
+<section id="nuestra-caja-de-herramientas" class="slide level2">
+<h2>Nuestra caja de herramientas</h2>
 
-<img data-src="img/from_renku.png" class="r-stretch"></section>
+<img data-src="img/hinsen_mod.png" class="r-stretch"></section>
+<section id="proyecto-transversal-flujo-de-trabajo" class="slide level2">
+<h2>Proyecto Transversal: Flujo de Trabajo</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Documento Reproducible en <a href="https://github.com/guscastilloa/mirza_2021_replication/blob/main/03_document/Documento_rmarkdown.Rmd">R Markdown</a> y en <a href="https://github.com/guscastilloa/mirza_2021_replication/blob/main/03_document/Documento_jupyter.ipynb">Jupyter</a> <img data-src="img/mirza_workflow.png" style="width:99.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/renku_1workflow.png"></p>
+</div>
+</div>
+</section>
+<section id="proyecto-transversal-datos" class="slide level2">
+<h2>Proyecto Transversal: Datos</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="https://sandbox.zenodo.org/records/79425">Archivados en Zenodo</a><sup>1</sup> <img data-src="img/mirza_data.png" style="width:99.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/renku_2data.png"></p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>En el Sandbox! En sandbox es para pruebas.</p></li></ol></aside></section>
+<section id="proyecto-transversal-código" class="slide level2">
+<h2>Proyecto Transversal: Código</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="https://github.com/guscastilloa/mirza_2021_replication">Repositorio en GitHub</a> <img data-src="img/mirza_code.png" style="width:80.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/renku_3code.png"></p>
+</div>
+</div>
+</section>
+<section id="proyecto-transversal-entorno" class="slide level2">
+<h2>Proyecto Transversal: Entorno</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><a href="https://renkulab.io/projects/gustavo.castillo.alvarez/mirza-2021-replication">Proyecto en RenkuLab</a></li>
+<li>Especificar dependencias e información de sistema</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/renku_4envir.png"></p>
+</div>
+</div>
+</section>
 <section id="manos-a-la-obra" class="slide level2">
 <h2>Manos a la obra</h2>
 <p><img data-src="img/april_2019_p_2.png"></p>
@@ -738,6 +994,44 @@ Run main specifications adding a control for per capita salsa consumption. Add a
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
