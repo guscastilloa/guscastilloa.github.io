@@ -67,10 +67,10 @@ y entornos computacionales
 :::: {.columns}
 ::: {style="font-size: 90%;"}
 ::: {.column width="50%"}
-> "programs must be written for people to read, and only incidentally for machines to execute"
->
+> "los programas deben escribirse para que los lean las personas, y sólo de paso para que los ejecuten las máquinas"
+> Abelson, et al (1996, pág. xxii) *Structure and Interpretation of Computer Programs*
 
-Abelson, et al (1996, pág. xxii) *Structure and Interpretation of Computer Programs*
+
 
 :::
 :::

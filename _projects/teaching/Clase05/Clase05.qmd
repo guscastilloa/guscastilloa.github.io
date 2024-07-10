@@ -29,7 +29,7 @@ format:
 Nos quedó pendiente 
 
 - Repasar [RecetaGalletas](https://github.com/guscastilloa/RecetaGalletas)
-- Ejercicio en clase ([solo 4](https://github.com/guscastilloa/RecetaGalletas/graphs/contributors) contribuyeron)
+- Ejercicio en clase ([solo 9](https://github.com/guscastilloa/RecetaGalletas/graphs/contributors) contribuyeron)
 - Un corto quiz en vivo
 
 ## Repasemos
@@ -151,10 +151,13 @@ Add a line to our robustness table reflecting the results.
 
 ## Alternativas gratuitas
 
-- GitLab
-- [Taiga.io](https://taiga.io/)
-- [Quire](https://quire.io/)
-- [OpenProject](https://www.openproject.org/)
+-   GitLab
+-   [JIRA](https://www.atlassian.com/es/software/jira)[^3]
+-   [Taiga.io](https://taiga.io/)
+-   [Quire](https://quire.io/)
+-   [OpenProject](https://www.openproject.org/)
+
+[^3]: Gratis hasta 10 personas
 
 ---
 
@@ -162,7 +165,6 @@ Sugerencia de flujo de trabajo para tareas:
 
 ![](img/jira_workflow.png)
 
-:::
 
 # Repositorios de Datos
 
@@ -173,46 +175,7 @@ Sugerencia de flujo de trabajo para tareas:
 ---
 ![](img/fair_principles.png)
 
-## Principios FAIR
+## Continúa en Clase 06
 
+El resto de esta seccíon de Repositorios de Datos se continuó en las diapositivas de [Clase 06](https://guscastilloa.github.io/projects/teaching/Clase06/Clase06.html#/title-slide)
 
-:::columns
-<!-- colstart -->
-
-::: {.column width="50%"}
-
-**F**: *Findable* o datos encontrables
-
-- F1
-- F2
-
-:::
-
-::: {.column width="50%"}
-
-**A**: *Accessible* o datos accesibles
-
-- A1: 
-- A2: 
-
-:::
-
-<!-- colend -->
-:::
-
-
-
-
-
-## Open Science Framework (OSF)
-
-- Creado en 2013 con la fundación del Centro para la Ciencia Abierta (COS en inglés)
-- Permite que el *proceso*, *contenido*, y *resultados* de la investigación sean accesibles abiertamente
-- Búsqueda de la transparencia
-- Herramienta en la nube, facilita colaboración para alojar datos, manuscritos de borradores, y más
-
-## Zenodo
-
-- Creado en 2013
-- Desarrollado por el proyecto OpenAIRE comisionado por la comisión europea
-- Herramienta 
