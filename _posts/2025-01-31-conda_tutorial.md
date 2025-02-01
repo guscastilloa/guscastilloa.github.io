@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Using conda for Scientific Computing in Windows
+title: "Using conda for Scientific Computing in Windows"
 date: 2025-01-31 09:00:00
-description: A quick start guide to setting up and using conda for reproducible scientific computing on Windows
-tags: tutorials computing-environment reproducibility conda
+description: "Quick start guide to conda for reproducible scientific computing on Windows"
+tags: tutorials 
 categories: tutorials
 ---
 
