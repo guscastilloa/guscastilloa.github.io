@@ -1,0 +1,88 @@
+---
+title: "¿Debería rastrear archivos .drawio en Git?"
+author: "Gustavo Castillo"
+date: "2025-03-05"
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: true
+knit: (function(inputFile, encoding) {
+    rmarkdown::render(inputFile,
+                      encoding = encoding,
+                      output_file = file.path(paste0(
+                        "/Users/upar/Library/CloudStorage/GoogleDrive-gustavo.castillo.alvarez@gmail.com/Mon Drive/00-SCHOOL-G/0-University_1/0-Semestres PEG/2024-10/Complexity Global School/guscastilloa.github.io/_posts/",
+                                                  Sys.Date(),
+                                                  '-',
+                                                  substr(basename(inputFile), 1, nchar(basename(inputFile)) - 4),
+                                                  '.md'
+                                                  )
+                                              )
+                      )
+    })
+---
+
+```{r, echo=FALSE}
+knitr::opts_knit$set(
+  base.dir = "/Users/upar/Library/CloudStorage/GoogleDrive-gustavo.castillo.alvarez@gmail.com/Mon Drive/00-SCHOOL-G/0-University_1/0-Semestres PEG/2024-10/Complexity Global School/guscastilloa.github.io", 
+  base.url = "/")
+knitr::opts_chunk$set(fig.path = "assets/img/posts/2024/predicting_poverty/")
+
+```
+
+
+# **¿Es un archivo `.drawio` un archivo de texto o binario?**
+
+Cuando trabajamos con Git, es una buena práctica **evitar rastrear archivos binarios** porque Git no puede mostrar diferencias (`diffs`) significativas ni fusionar (`merge`) cambios de manera eficiente en ellos. Sin embargo, los archivos `.drawio` presentan una situación especial.
+
+## **1. Diferencia entre archivos de texto y archivos binarios**
+Git trata los archivos como **texto o binarios** en función de su contenido:
+
+- **Archivos de texto:**
+  - Contienen texto plano legible por humanos (`.txt`, `.csv`, `.py`, `.xml`).
+  - Se pueden rastrear eficientemente porque los `diffs` muestran cambios línea por línea.
+  - Git puede fusionar cambios automáticamente.
+
+- **Archivos binarios:**
+  - Contienen datos codificados o comprimidos (`.png`, `.pdf`, `.xlsx`).
+  - Los `diffs` no son útiles porque los cambios aparecen como modificaciones completas.
+  - No se pueden fusionar fácilmente.
+
+## **2. ¿Es un archivo `.drawio` un archivo binario?**
+
+Un archivo `.drawio` está basado en **XML**, lo que significa que es técnicamente **texto plano** y se puede abrir en un editor como Vim. Sin embargo, en la práctica se comporta **más como un archivo binario** por las siguientes razones:
+
+- **El XML no es fácilmente legible en Git.** Puede estar comprimido en una sola línea, dificultando la visualización de cambios.
+- **Pequeñas ediciones pueden cambiar grandes secciones del XML.** Mover una figura o cambiar un color puede reorganizar muchos elementos en el archivo.
+- **Las fusiones (`merge`) son problemáticas.** Al ser un archivo estructurado automáticamente por Draw.io, combinar cambios puede ser difícil.
+
+## **3. ¿Debería rastrear archivos `.drawio` en Git?**
+
+✅ **Sí, pero con precaución.** Aquí algunas mejores prácticas:
+
+1. **Habilitar Git LFS para archivos `.drawio`, especialmente si son grandes:**
+   ```bash
+   git lfs track "*.drawio"
+   ```
+   Esto evita que Git almacene versiones innecesarias en su historial.
+
+2. **Exportar versiones en formatos alternativos (SVG/PDF)** para facilitar la visualización de cambios sin necesidad de abrir Draw.io.
+
+3. **Guardar el `.drawio` en formato XML "pretty"** en Draw.io:
+   - Ir a **File > Preferences > Save XML as "Pretty"**.
+   - Esto hace que los `diffs` sean más legibles en Git.
+
+4. **Si no necesitas modificar el `.drawio`, considera solo rastrear su versión en PNG.**
+
+## **4. Comparación con archivos binarios**
+
+| Característica     | `.drawio` (XML) | Archivo Binario (`.png`, `.docx`) |
+|-------------------|----------------|-----------------------------------|
+| ¿Texto plano?    | ✅ Sí           | ❌ No                            |
+| ¿Git diffs útiles? | ❌ No mucho    | ❌ No                            |
+| ¿Fusionable?     | ❌ Difícil      | ❌ Imposible                     |
+| ¿Se debe rastrear en Git? | ✅ Sí, con cuidado | ⚠️ Mejor usar LFS o evitar |
+
+## **Conclusión**
+
+Un archivo `.drawio` es técnicamente un archivo de texto, pero en la práctica **actúa como un archivo binario** en Git. Si decides rastrearlo, considera usar **XML en formato "pretty"**, **Git LFS**, o exportar versiones alternativas para facilitar el control de versiones.
+
