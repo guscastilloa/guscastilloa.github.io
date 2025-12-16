@@ -12,3 +12,5 @@ vendor
 
 .Rproj.user
 *.icloud
+
+assets_for_context/
