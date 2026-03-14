@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Hot Mess, Cool Head"
+date: 2026-03-13 17:58:00
+description: "A short, curated list of practical links on AI agents, skills, and workflow ideas."
+tags: resources
+categories: commentary
+---
+
+I feel like everything is burning around me. Not literally, of course. From the comfort of my home that is not in Teheran, nothing really burns around me. Nonetheless, it does make me feel like I am in the midst of a regime change due to the bombardments that these last weeks have brought about in my life. In a stark contrast to me in the not-so-far past, I would be having a serious mental breakdown, on the brink of a panic attack, and probably hyperventilating and getting dizzy by writing these things right before my favorite class to teach starts. My father's accident today, me losing my data, my computer suddenly failing on me for several days, all could be counted as misfortunes that have made my present unbearable, the "strikes" that make it seem as if everything was, as I said, burning around me. Not to brag though, but if I were to enumerate and count the blessings that I enjoyed today, I would be exhausted by the end of it.
+
+Again, unlike my past-self, I feel also quite at peace despite the fire. Sure, it's hot, uncomfortable, I have a headache since my father's colleague called me regarding his accident, and I can easily imagine a more desirable parallel universe in which the chain of events wasn't as what currently is. The huge problem with that thought is that I can extend that desire for a better present/past as far as I want, to a time where my ex didn't even leave Colombia, and perhaps also to a time where I didn't miss the opportunity to call Marta, a convalescent lady that died during 2020 to cancer who had been asking where I was to have a chat with me. It's definitely a slippery slope, but it portrays very well how I feel right now. 
+
+On the bright side, the present me, the me I am *becoming* every day, the impermanent-but-recognizable me that is here writing these words, feels regret, but is okay with that. I could write a long list of things I've learned these past few months. Heck, even the past few weeks. I might not make it for a good PhD program this year, or perhaps I might, I don't know, but what I do know, is that whichever is the outcome, everything will be just fine. 
+
+A sense of discomfort lingers, as if I were betraying a hustle-culture side within me reignited by a friend as he shared with me his GRE study regime: failing is not an option. Not sure what to make of it, perhaps I'm just built different, for better or for worse. I am embracing failure and accepting the vulnerability that comes with sharing this too. After all, my success wasn't exactly what Paul said Jesus Christ left for us, but rather *shalom*, the greek *eirēnē* (εἰρήνη) or the latin "pax" (of course not in the negative meaning of peace as absence of conflict or war). Apologies for the reminiscing of the state of Israel by their use of the word "shalom", but it's a beautiful concept that isn't guilty of the current state of affairs of the world.
