@@ -2,7 +2,7 @@
 layout: post
 title: "Hot Mess, Cool Head"
 date: 2026-03-13 17:58:00
-description: "A short, curated list of practical links on AI agents, skills, and workflow ideas."
+description: ""
 tags: resources
 categories: commentary
 ---
