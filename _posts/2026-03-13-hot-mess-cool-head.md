@@ -2,7 +2,7 @@
 layout: post
 title: "Hot Mess, Cool Head"
 date: 2026-03-13 17:58:00
-description: ""
+description: "reflection on the past few weeks and the present moment, embracing failure and vulnerability."
 tags: resources
 categories: commentary
 ---
