@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "In What Direction? Replication and Extension of Oskooii 2020 'Perceived Discrimination and Political Behavior'"
-permalink: /projects/replicaiton_webinar/sessions/09-perceived-discrimination/
+permalink: /projects/replication_webinar/sessions/09-perceived-discrimination/
 description: "Andrej Cvetić (Trinity College Dublin), November 17, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 8 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>.
 

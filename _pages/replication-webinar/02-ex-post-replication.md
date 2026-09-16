@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Ex Post Replication and Ex Ante Documentation: Two Sides of a Coin"
-permalink: /projects/replicaiton_webinar/sessions/02-ex-post-replication/
+permalink: /projects/replication_webinar/sessions/02-ex-post-replication/
 description: "Richard Ball and Norm Medeiros, Project TIER — September 15, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 2 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 

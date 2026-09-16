@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Replication in Quantitative Macroeconomics"
-permalink: /projects/replicaiton_webinar/sessions/03-quantitative-macroeconomics/
+permalink: /projects/replication_webinar/sessions/03-quantitative-macroeconomics/
 description: "Robert Kirkby, Victoria University of Wellington — September 29, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 3 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 

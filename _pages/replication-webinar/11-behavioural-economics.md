@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Replication in Behavioural Economics"
-permalink: /projects/replicaiton_webinar/sessions/11-behavioural-economics/
+permalink: /projects/replication_webinar/sessions/11-behavioural-economics/
 description: "Anna Dreber (Stockholm School of Economics), December 15, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 ## Session 11
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Student replication on the role of the minimum wage in the developing world"
-permalink: /projects/replicaiton_webinar/sessions/10-minimum-wage/
+permalink: /projects/replication_webinar/sessions/10-minimum-wage/
 description: "Oscar Jaramillo (Torcuato de Tella University), December 1, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 ## Session details
 

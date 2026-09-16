@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 'Reopening After Covid: A Replication and Extension of Chetty et al. (2020) "The Economic Impacts of COVID-19."'
-permalink: /projects/replicaiton_webinar/sessions/07-reopening-after-covid/
+permalink: /projects/replication_webinar/sessions/07-reopening-after-covid/
 description: "Annais Gangolf, Devansh Goyal, and Samuel E. Ross (Haverford College), November 10, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 7 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 

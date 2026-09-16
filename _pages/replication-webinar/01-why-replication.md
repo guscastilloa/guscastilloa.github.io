@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Webinar Series Introduction: Why replication? How is it done? Where to find replication material?"
-permalink: /projects/replicaiton_webinar/sessions/01-why-replication/
+permalink: /projects/replication_webinar/sessions/01-why-replication/
 description: "Gustavo A. Castillo Alvarez, Jan H. Höffler, and Diana Soeiro — September 8, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 1 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Replication in Social & Behavioural Sciences"
-permalink: /projects/replicaiton_webinar/sessions/15-social-behavioural-sciences/
+permalink: /projects/replication_webinar/sessions/15-social-behavioural-sciences/
 description: "FORRT with Flavio Azevedo, Helena Hartmann, and Bethan Iley, October 25, 2023"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 15 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>.
 

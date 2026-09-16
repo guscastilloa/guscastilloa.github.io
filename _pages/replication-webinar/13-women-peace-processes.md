@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Student replication: Does women’s participation in peace processes lead to more durable peace? A replication study of Krause, Krause, and Bränfors (2018)"
-permalink: /projects/replicaiton_webinar/sessions/13-women-peace-processes/
+permalink: /projects/replication_webinar/sessions/13-women-peace-processes/
 description: "Lenka Olejníková (University of New South Wales), March 16, 2023"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 Session 13 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>.
 

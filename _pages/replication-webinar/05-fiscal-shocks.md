@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Student replication: Effects of Fiscal Shocks in a Globalized World"
-permalink: /projects/replicaiton_webinar/sessions/05-fiscal-shocks/
+permalink: /projects/replication_webinar/sessions/05-fiscal-shocks/
 description: "Franziska Strunz, Universität der Bundeswehr Munich — October 20, 2022"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 This is the first student presentation during the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 

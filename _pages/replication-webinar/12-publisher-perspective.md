@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Replication from a publisher's perspective"
-permalink: /projects/replicaiton_webinar/sessions/12-publisher-perspective/
+permalink: /projects/replication_webinar/sessions/12-publisher-perspective/
 description: "Jack Reardon and Andrew Weiss (University of Wisconsin–Eau Claire), March 1, 2023"
 nav: false
 ---
 
-[← Back to the webinar series](/projects/replicaiton_webinar/)
+[← Back to the webinar series](/projects/replication_webinar/)
 
 ## Session 12
 

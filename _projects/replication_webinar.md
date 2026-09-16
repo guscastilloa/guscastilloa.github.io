@@ -2,6 +2,7 @@
 layout: page
 title: "Replication webinar series"
 description: "A free webinar series on replicating empirical research in economics and the social sciences"
+permalink: /projects/replication_webinar/
 img: /assets/img/INET-og.png
 importance: 1
 category: fun
@@ -26,7 +27,7 @@ The talks followed a flipped-classroom format: speakers shared pre-recorded pres
 
 Each linked session title opens the complete mirrored page. The expandable notes below are brief overviews for navigation, not replacements for the source text.
 
-### [1. Why replication? How is it done? Where can replication material be found?](/projects/replicaiton_webinar/sessions/01-why-replication/)
+### [1. Why replication? How is it done? Where can replication material be found?](/projects/replication_webinar/sessions/01-why-replication/)
 
 **Gustavo A. Castillo Alvarez, Jan H. Höffler, and Diana Soeiro**<br>
 September 8, 2022
@@ -44,7 +45,7 @@ Gustavo A. Castillo Alvarez conceived the series through the YSI working group. 
 <hr>
 <br>
 
-### [2. Ex post replication and ex ante documentation: two sides of a coin](/projects/replicaiton_webinar/sessions/02-ex-post-replication/)
+### [2. Ex post replication and ex ante documentation: two sides of a coin](/projects/replication_webinar/sessions/02-ex-post-replication/)
 
 **Richard Ball and Norm Medeiros, Project TIER (Haverford College)**<br>
 September 15, 2022
@@ -62,7 +63,7 @@ Richard Ball, Professor of Economics, and Norm Medeiros, Associate Librarian, ar
 <hr>
 <br>
 
-### [3. Replication in quantitative macroeconomics](/projects/replicaiton_webinar/sessions/03-quantitative-macroeconomics/)
+### [3. Replication in quantitative macroeconomics](/projects/replication_webinar/sessions/03-quantitative-macroeconomics/)
 
 **Robert Kirkby, Victoria University of Wellington**<br>
 September 29, 2022
@@ -80,7 +81,7 @@ Robert Kirkby is a macroeconomist at Victoria University of Wellington. His rese
 <hr>
 <br>
 
-### [4. Computational reproductions may be messier than expected](/projects/replicaiton_webinar/sessions/04-computational-reproductions/)
+### [4. Computational reproductions may be messier than expected](/projects/replication_webinar/sessions/04-computational-reproductions/)
 
 **Nate Breznau, University of Bremen**<br>
 October 13, 2022
@@ -98,7 +99,7 @@ Nate Breznau researches social policy, public opinion, crowdsourced replication,
 <hr>
 <br>
 
-### [5. Student replication: “Effects of fiscal shocks in a globalized world”](/projects/replicaiton_webinar/sessions/05-fiscal-shocks/)
+### [5. Student replication: “Effects of fiscal shocks in a globalized world”](/projects/replication_webinar/sessions/05-fiscal-shocks/)
 
 **Franziska Strunz, Universität der Bundeswehr Munich**<br>
 October 20, 2022
@@ -114,7 +115,7 @@ Franziska Strunz was a PhD student and research assistant at Universität der Bu
 <hr>
 <br>
 
-### [6. Questionable research practices outside of the lab](/projects/replicaiton_webinar/sessions/06-questionable-practices/)
+### [6. Questionable research practices outside of the lab](/projects/replication_webinar/sessions/06-questionable-practices/)
 
 **[Jason Chin](https://www.jasonmchin.com/), University of Sydney**<br>
 October 27, 2022
@@ -132,7 +133,7 @@ Jason Chin is an interdisciplinary legal scholar with training in social psychol
 <hr>
 <br>
 
-### [7. Reopening after COVID: a replication and extension of Chetty et al. (2020)](/projects/replicaiton_webinar/sessions/07-reopening-after-covid/)
+### [7. Reopening after COVID: a replication and extension of Chetty et al. (2020)](/projects/replication_webinar/sessions/07-reopening-after-covid/)
 
 **Annais Gangolf, Devansh Goyal, and [Samuel Ross](https://www.samueleross.com/), Haverford College**<br>
 November 10, 2022
@@ -148,7 +149,7 @@ Original study: Chetty et al., “[The Economic Impacts of COVID-19: Evidence fr
 <hr>
 <br>
 
-### [8. Replication in political science](/projects/replicaiton_webinar/sessions/08-political-science/)
+### [8. Replication in political science](/projects/replication_webinar/sessions/08-political-science/)
 
 **Carolina Curvale and Gustavo Pérez-Arrobo, FLACSO Ecuador**<br>
 November 17, 2022
@@ -164,7 +165,7 @@ Related article: “[Documentation Requirements in Political Science Journals: M
 <hr>
 <br>
 
-### [9. In what direction? Replication and extension of Oskooii (2020)](/projects/replicaiton_webinar/sessions/09-perceived-discrimination/)
+### [9. In what direction? Replication and extension of Oskooii (2020)](/projects/replication_webinar/sessions/09-perceived-discrimination/)
 
 **Andrej Cvetić, Trinity College Dublin**<br>
 November 17, 2022
@@ -180,7 +181,7 @@ Andrej Cvetić was a PhD student and research assistant in political science at 
 <hr>
 <br>
 
-### [10. Student replication: the minimum wage in the developing world](/projects/replicaiton_webinar/sessions/10-minimum-wage/)
+### [10. Student replication: the minimum wage in the developing world](/projects/replication_webinar/sessions/10-minimum-wage/)
 
 **Oscar Jaramillo, Universidad Torcuato Di Tella**<br>
 December 1, 2022
@@ -196,7 +197,7 @@ Oscar Jaramillo is an economist from the Central University of Ecuador who pursu
 <hr>
 <br>
 
-### [11. Replication in behavioural economics](/projects/replicaiton_webinar/sessions/11-behavioural-economics/)
+### [11. Replication in behavioural economics](/projects/replication_webinar/sessions/11-behavioural-economics/)
 
 **[Anna Dreber](https://sites.google.com/site/annadreber/), Stockholm School of Economics**<br>
 December 15, 2022
@@ -215,7 +216,7 @@ Anna Dreber is the Johan Björkman Professor of Economics at the Stockholm Schoo
 <br>
 
 
-### [12. Replication from a publisher's perspective](/projects/replicaiton_webinar/sessions/12-publisher-perspective/)
+### [12. Replication from a publisher's perspective](/projects/replication_webinar/sessions/12-publisher-perspective/)
 
 **Jack Reardon and Andrew Weiss, University of Wisconsin–Eau Claire**<br>
 March 1, 2023
@@ -231,7 +232,7 @@ This session considered replication from the perspective of an academic publishe
 <hr>
 <br>
 
-### [13. Student replication: women’s participation in peace processes](/projects/replicaiton_webinar/sessions/13-women-peace-processes/)
+### [13. Student replication: women’s participation in peace processes](/projects/replication_webinar/sessions/13-women-peace-processes/)
 
 **Lenka Olejníková, University of New South Wales**<br>
 March 16, 2023
@@ -249,7 +250,7 @@ Lenka Olejníková completed a PhD at UNSW on the limitations of statistical mod
 <hr>
 <br>
 
-### [14. Replication in agricultural economics](/projects/replicaiton_webinar/sessions/14-agricultural-economics/)
+### [14. Replication in agricultural economics](/projects/replication_webinar/sessions/14-agricultural-economics/)
 
 **Robert Finger, ETH Zürich**<br>
 October 18, 2023
@@ -267,7 +268,7 @@ Robert Finger is Professor of Agricultural Economics and Policy at ETH Zürich a
 <hr>
 <br>
 
-### [15. Replication in social and behavioural sciences](/projects/replicaiton_webinar/sessions/15-social-behavioural-sciences/)
+### [15. Replication in social and behavioural sciences](/projects/replication_webinar/sessions/15-social-behavioural-sciences/)
 
 **[Framework for Open and Reproducible Research Training (FORRT)](https://forrt.org/), with Flavio Azevedo, Helena Hartmann, and Bethan Iley**<br>
 October 25, 2023
