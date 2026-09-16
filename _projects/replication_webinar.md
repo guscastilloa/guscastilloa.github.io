@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Replication webinar series"
-description: "A free webinar series on replicating empirical research in economics and the social sciences"
+description: ""
 permalink: /projects/replication_webinar/
 img: /assets/img/INET-og.png
 importance: 1
