@@ -16,7 +16,7 @@ A recorded video presentation was available to view prior to the session [here](
 
 The recording of the live Q&A session is available [here](https://vimeo.com/755328940).
 
-Use the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Talk:Webinar_series:_Ex_Post_Replication_and_Ex_Ante_Documentation:_Two_Sides_of_a_Coin" class="wikilink" title="discussion page">discussion page</a> to comment or ask questions in written form.
+Use the discussion page to comment or ask questions in written form.
 
 Robert Kirkby (Victoria University of Wellington)
 

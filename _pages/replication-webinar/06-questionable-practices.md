@@ -11,7 +11,7 @@ nav: false
 Session 6 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 
 Registration for the live question & answer session on October 27, 2022, 23h Brussels/Paris/Berlin time, 17h Haverford/Bogotá time, October 28, 8h Sydney time! was possible [here](https://ysi.ineteconomics.org/event/s6-questionable-research-practices-outside-of-the-lab/).  
-The pre-recorded video presentation was available to view before the live discussion [here](https://vimeo.com/753809900). Use the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Talk:Webinar_series:_Questionable_research_practices_outside_of_the_lab" class="wikilink" title="discussion page">discussion page</a> to comment or ask questions in written form.
+The pre-recorded video presentation was available to view before the live discussion [here](https://vimeo.com/753809900). Use the discussion page to comment or ask questions in written form.
 
 [Jason Chin](https://www.jasonmchin.com/) (University of Sydney)
 

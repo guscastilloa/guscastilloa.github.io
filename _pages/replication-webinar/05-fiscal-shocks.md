@@ -12,7 +12,7 @@ This is the first student presentation during the <a href="http://replication.un
 
 The presentation was live, no pre-recorded video. Registration for the live session was possible [here](https://ysi.ineteconomics.org/event/s5-student-replication-on-fiscal-shocks-in-the-globalized-world/)!
 
-Use the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Talk:Student_replication_&quot;Effects_of_Fiscal_Shocks_in_a_Globalized_World&quot;" class="wikilink" title="discussion page">discussion page</a> to comment or ask questions in written form.
+Use the discussion page to comment or ask questions in written form.
 
 Franziska Strunz (Universität der Bundeswehr Munich), October 20, 2022
 

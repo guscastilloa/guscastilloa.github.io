@@ -12,7 +12,7 @@ Session 2 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.ph
 
 Registration was possible [here](https://ysi.ineteconomics.org/event/s2-two-sides-of-the-replication-coin/) for the live question & answer session on September 15, 2022, 18h Brussels/Paris/Berlin time.
 
-Two recorded video presentations were available to view before the live discussion on September 15. They are available [here](https://vimeo.com/750000778) and the [part on the Open Science Framework (OSF) here](https://vimeo.com/750000865) or alternatively [on OSF together with the slides](https://osf.io/u7b4h/). Use the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Talk:Webinar_series:_Ex_Post_Replication_and_Ex_Ante_Documentation:_Two_Sides_of_a_Coin" class="wikilink" title="discussion page">discussion page</a> to comment or ask questions in written form. Recordings of the live session are available to [watch](https://vimeo.com/channels/1810142/752827911) or [listen](https://ysi-recordings.storage.googleapis.com/63109fac95dc3d02c3494faf/audio.m4a).
+Two recorded video presentations were available to view before the live discussion on September 15. They are available [here](https://vimeo.com/750000778) and the [part on the Open Science Framework (OSF) here](https://vimeo.com/750000865) or alternatively [on OSF together with the slides](https://osf.io/u7b4h/). Use the discussion page to comment or ask questions in written form. Recordings of the live session are available to [watch](https://vimeo.com/channels/1810142/752827911) or [listen](https://ysi-recordings.storage.googleapis.com/63109fac95dc3d02c3494faf/audio.m4a).
 
 Richard Ball & Norm Medeiros, Project Teaching Integrity in Empirical Research (TIER) (Haverford College)
 
