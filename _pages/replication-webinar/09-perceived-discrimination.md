@@ -16,8 +16,6 @@ The replication paper, coding scripts in R and used datasets are available in th
 
 The original study that was replicated is "Perceived Discrimination and Political Behavior", Kassra A.R. Oskooii, British Journal of Political Science, Volume 50, Issue 3, July 2020, pp. 867 - 892. DOI: [10.1017/S0007123418000133](https://doi.org/10.1017/S0007123418000133).
 
-Please, use the discussion page in this wiki to comment or ask questions in written form.
-
 ### Abstract
 
 This paper replicates and extends Oskooii 2020. The original paper uses the Ethnic Minority British Election Study (EMBES) dataset to study how social and political discrimination on individual level influence voting behaviour of minorities. My paper successfully replicates the original results and extends the paper by performing the same statistical procedure on the European Social Survey (ESS) wave 5 dataset for UK and Western European countries. In the extension I analyse the effect of group discrimination on voting. My results indicate group discrimination lowers the propensity to cast a ballot, which runs counter to prevalent findings in the literature.

@@ -16,8 +16,6 @@ A recorded video presentation was available to view prior to the session [here](
 
 The recording of the live Q&A session is available [here](https://vimeo.com/755328940).
 
-Use the discussion page to comment or ask questions in written form.
-
 Robert Kirkby (Victoria University of Wellington)
 
 ## Abstract

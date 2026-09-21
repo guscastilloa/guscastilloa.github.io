@@ -14,8 +14,6 @@ A working paper is available [here](https://www.samueleross.com/pages/working-pa
 
 The presentation was live — no pre-recorded video. Registration for the live session was possible [here](https://ysi.ineteconomics.org/event/s7-reopening-after-covid-a-replication-and-extension/).
 
-Use the discussion page in this wiki to comment or ask questions in written form.
-
 Annais Gangolf, Devansh Goyal, and [Samuel E. Ross](https://www.samueleross.com) (Haverford College)
 
 ## Abstract

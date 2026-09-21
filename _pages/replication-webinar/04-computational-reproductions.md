@@ -12,7 +12,6 @@ Session 4 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.ph
 
 Watch the pre-recorded video presentation prior to the session: [here](https://vimeo.com/757911322)!  
 <u>Registration for this session was possible [here!](https://ysi.ineteconomics.org/event/s4-advice-and-information-on-computational-reproductions/)</u>  
-Use the discussion page to comment or ask questions in written form.
 Slides of the talk available on Nate Breznau's "Teaching Resources" OSF page (https://osf.io/qvmnb). The recording of this session can be watched [here](https://youngscholarsinitiative.zoom.us/rec/play/jLUm-v1moQ6FLnwEe_OuD5NwR-50xFnGEv2yiSSfKeueF59qlX1fi8DW0H_FzcW60QUNQGx3-nFnd8Sq.iwM5nDL3Z0uIGw6H) and listened to [here](https://ysi-recordings.storage.googleapis.com/6310a2b6bd0a0b02ba32dadc/audio.m4a).
 
 <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/User:Nate_Breznau" class="wikilink" title="Nate Breznau">Nate Breznau</a> (University of Bremen), October 13, 2022, 18h Brussels/Paris/Berlin time.  

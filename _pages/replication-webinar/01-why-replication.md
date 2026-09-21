@@ -10,7 +10,7 @@ nav: false
 
 Session 1 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_Replicating_empirical_studies_in_economics_-_an_opportunity_for_students" class="wikilink" title="Webinar series: Replicating empirical studies in economics - an opportunity for students">Webinar series: Replicating empirical studies in economics - an opportunity for students</a>
 
-Registration was possible [here](https://ysi.ineteconomics.org/event/s1-why-replication-how-is-it-done-where-to-find-replication-material/) for the live question & answer session on September 8, 2022, 18h Brussels/Paris/Berlin time. [Watch the pre-recorded video here](https://vimeo.com/746369985). Use the discussion page to comment or ask questions in written form. Recordings of the session are available to [watch](https://vimeo.com/channels/1810142/752803946) or [listen](https://ysi-recordings.storage.googleapis.com/62e433cc1edc5f77bb1053a6/audio.m4a).
+Registration was possible [here](https://ysi.ineteconomics.org/event/s1-why-replication-how-is-it-done-where-to-find-replication-material/) for the live question & answer session on September 8, 2022, 18h Brussels/Paris/Berlin time. [Watch the pre-recorded video here](https://vimeo.com/746369985). Recordings of the session are available to [watch](https://vimeo.com/channels/1810142/752803946) or [listen](https://ysi-recordings.storage.googleapis.com/62e433cc1edc5f77bb1053a6/audio.m4a).
 
 <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/User:Gustavo_Adolfo_Castillo_Alvarez" class="wikilink" title="Gustavo A. Castillo Alvarez">Gustavo A. Castillo Alvarez</a> (Universidad de los Andes), <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/User:Jan_H._Höffler" class="wikilink" title="Jan H. Höffler">Jan H. Höffler</a> (ReplicationWiki), <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/User:DianaSoeiro" class="wikilink" title="Diana Soeiro">Diana Soeiro</a> (ISCTE-University Institute of Lisbon), September 8, 2022, 18h CEST
 
@@ -186,13 +186,13 @@ Present your replication preparing a video for the live sessions! Those presenti
 
 To prepare your session, link to your replication materials (if you wish to share publicly) or just summarize on the page what you have done.
 
-Participate in live Q & A sessions of your peers (if available) and contribute to discussion pages of your peers at the time of your convenience!
+Participate in live Q & A sessions of your peers (if available)!
 
 The community of YSI has members from all over the world, thus we have adopted this flipped classroom format so that it is possible to participate even without the hassle to schedule or work with several time zones with the help of the our platforms, both on YSI and the ReplicationWiki. Thus the importance of having your accounts.
 
-Wiki pages on the ReplicationWiki with tutorials and guides to create pages, creating and following discussions in a wiki page, and whatever else is necessary. If there is something that isn't clear or that you deem requires a tutorial either feel free to create it yourself, or at least share the need with us so that we can create the corresponding tutorial or help page.
+Wiki pages on the ReplicationWiki with tutorials and guides to create pages and whatever else is necessary. If there is something that isn't clear or that you deem requires a tutorial either feel free to create it yourself, or at least share the need with us so that we can create the corresponding tutorial or help page.
 
-In brief, actively engage during the webinar to make the most of it! We are looking forward to the discussions both live and on the ReplicationWiki discussion pages!
+In brief, actively engage during the webinar to make the most of it! We are looking forward to the live discussions!
 
 ## Presenter bios
 

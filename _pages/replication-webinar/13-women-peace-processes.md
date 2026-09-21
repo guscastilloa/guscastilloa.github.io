@@ -14,8 +14,6 @@ The original study that was replicated is Krause, J., Krause, W. and Bränfors, 
 
 View the pre-recorded video [here](https://vimeo.com/804341171) and register for the live Q&A session [here](https://ysi.ineteconomics.org/event/s12-womens-participation-in-the-peace-process/)!
 
-Please, use the discussion page in this wiki to comment or ask questions in written form.
-
 ### Abstract
 
 According to Krause, Krause, and Bränfors (2018, hereafter KKB), female signatories of peace agreements have a significant effect on the durability of peace. This paper examines the reproducibility of their research and considers its limitations. Despite minor inconsistencies, the main findings are successfully reproduced, and the data analysis meets the key underlying statistical assumptions. However, further analysis also identifies low statistical power and the underspecification of the theoretical and empirical estimands as limitations of this research. Therefore, further empirical research into the effects of women’s participation on peace processes is needed to bolster KKB’s promising findings.

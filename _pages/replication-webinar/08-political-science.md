@@ -12,8 +12,6 @@ Session 8 of the <a href="http://replication.uni-goettingen.de/wiki_DEV/index.ph
 
 The presentation was live — no pre-recorded video. Registration for the live session was possible [here](https://ysi.ineteconomics.org/event/s8-replication-in-political-science/).
 
-Use the discussion page in this wiki to comment or ask questions in written form.
-
 Right after this presentation there was a <a href="http://replication.uni-goettingen.de/wiki_DEV/index.php/Webinar_series:_In_What_Direction" class="wikilink" title="student presentation of a replication in political science">student presentation of a replication in political science</a>.
 
 Carolina Curvale (FLACSO-Ecuador) & Gustavo Pérez-Arrobo (FLACSO-Ecuador & University of Colorado Boulder), November 17, 2022

@@ -14,8 +14,6 @@ View the pre-recorded video [here](https://vimeo.com/873977479).
 
 The live Q&A session took place on October 18, 2023, 17:30 CEST and is recorded [here](https://vimeo.com/875681394).
 
-Please, use the discussion page in this wiki to comment or ask questions in written form. If you could not make it for the live session, your comment or question can then still be taken into account.
-
 ### Abstract
 
 In my presentation, I discuss the lack of replicability and the lack of replications in agricultural economics and policy studies, its causes and its implications. I present experiences and insights from editing the first special issue on replication in agricultural economics, which was published in Applied Economic Perspectives and Policy (Finger, Grebitus & Henningsen 2023, <https://doi.org/10.1002/aepp.13386>). This special issue consists of 11 articles that replicate various empirical analyses presented in published articles and advance the analyses that were used in the original work to provide further insights. I provide pathways on how to untap the potential of replications and provide guidance for enabling a stronger emphasis on replications in the field of agricultural economics. I also highlight why agricultural policy makers shall foster and use replications and how policy makers can enable increasing replicability and use of replications.
